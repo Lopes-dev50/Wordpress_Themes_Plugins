@@ -1,0 +1,89 @@
+  /* Estilos para a div flutuante com cor de fundo */
+  .background-div {
+    text-align: center;
+    position: fixed;
+    border-radius: 15px 15px 0px 0px;
+    width: 70%;
+    height: auto;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centraliza no centro da tela */
+    z-index: 9999;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#close-button {
+    position: absolute;
+    /* Posiciona o botão de forma absoluta */
+    top: 10px;
+    /* Define a distância a partir do topo */
+    right: 10px;
+    /* Define a distância a partir da direita */
+    cursor: pointer;
+    color: #999;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 100%;
+    /* Torna o botão "X" circular */
+    transition: background-color 0.3s;
+    /* Adiciona uma transição suave para a mudança de cor */
+    
+}
+
+#close-button:hover {
+    background-color: #666;
+    /* Cor de fundo vermelha quando o mouse está em cima */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Adicione margem superior */
+    margin-bottom: 10px;
+    /* Adicione margem inferior */
+    padding: 10px;
+    /* Adicione preenchimento */
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 44px;
+    margin-top: 20px;
+    /* Adicione margem superior */
+    margin-bottom: 10px;
+    /* Adicione margem inferior */
+    padding: 10px;
+    /* Adicione preenchimento */
+}
+
+p {
+    font-size: 22px;
+    margin-top: 30px;
+    /* Adicione margem superior */
+    margin-bottom: 20px;
+    /* Adicione margem inferior */
+    padding: 10px;
+    /* Adicione preenchimento */
+}
+
+a {
+    text-decoration: none !important; 
+    /* Remove o sublinhado dos links */
+}
+
+/* Estilos para os elementos do mostrador de contador */
+.cronometro {
+
+    background-color: blue;
+
+    font-size: 38px;
+    /* Tamanho da fonte */
+    color: #fff;
+    /* Cor do texto */
+}

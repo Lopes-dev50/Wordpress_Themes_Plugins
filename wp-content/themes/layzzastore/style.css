@@ -1,0 +1,338 @@
+/*
+Theme Name: Layzza Store
+Theme URI: https://penctec.com.br/layzzastore
+Description: Apresenta um design limpo e minimalista que coloca seus produtos em destaque. Com uma interface descomplicada, seus clientes podem navegar facilmente pelos produtos e concluir suas compras sem distrações.Personalize o tema de acordo com a identidade visual da sua marca. Escolha entre uma variedade de esquemas de cores, para criar uma loja online que seja verdadeiramente única. Totalmente integrado com o WooCommerce, permite que você gerencie seus produtos, pedidos e inventário de maneira eficiente. Ofereça uma experiência de compra perfeita para seus clientes
+Author: Sandro Lopes
+Author URI: https://penctec.com.br
+Version: 1.0
+License: Licença do seu tema, por exemplo, GPL v2 ou mais recente
+License URI: URL da licença (opcional)
+
+Texto opcional que descreve os estilos CSS personalizados neste arquivo.
+Você pode adicionar seus estilos personalizados abaixo deste comentário.
+*/
+/* Importa o arquivo de estilos personalizados */
+@import url('custom-styles.css');
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do cabeçalho */
+
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-branding {
+        flex: 1;
+        text-align: left; /* Alinha o logotipo ao centro */
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .busca {
+        display: flex;
+        align-items: center;
+        
+    }
+
+  /* Estilize a caixa de pesquisa de texto */
+#s {
+    width: 200px; /* Defina a largura desejada */
+    padding: 10px; /* Adicione um preenchimento para melhorar a aparência */
+    border: 1px solid #ccc;
+    border-radius: 110px; /* Cantos arredondados */
+    font-size: 16px;
+}
+
+/* Estilize o botão de pesquisa */
+#searchsubmit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 110px; /* Cantos arredondados */
+    font-size: 16px;
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+
+  .shopping_cart_content {
+        display: flex;
+        align-items: center;
+        font-size: 24px; /* Ajuste o tamanho do ícone do carrinho conforme necessário */
+        margin-right: 5px; /* Adicione um espaçamento entre o ícone e o valor total */
+        padding: 10px 20px;
+        border-radius: 110px; /* Cantos arredondados */
+        font-size: 16px;
+       
+    }
+
+    @media screen and (max-width: 769px) {
+        /* Estilize o formulário de pesquisa */
+        #searchform {
+            margin: 0; /* Remova qualquer margem padrão */
+        }
+        
+        /* Estilize a caixa de pesquisa de texto */
+        #s {
+            width: 80px; /* Defina a largura desejada */
+            padding: 5px; /* Adicione um preenchimento para melhorar a aparência */
+            border: 1px solid #ccc;
+            border-radius: 110px; /* Cantos arredondados */
+            font-size: 12px;
+        }
+        
+        /* Estilize o botão de pesquisa */
+        #searchsubmit {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 110px; /* Cantos arredondados */
+            font-size: 12px;
+            cursor: pointer; /* Altera o cursor ao passar por cima */
+        }
+        
+        /* Estilize o botão de pesquisa quando estiver em foco */
+        #searchsubmit:focus {
+            outline: none; /* Remove a borda ao focar */
+            box-shadow: 0 0 0 2px #007bff; /* Adiciona um destaque ao focar */
+        }
+        
+        /* Estilize a div que contém o formulário de pesquisa e o carrinho de compras */
+        .search-and-cart {
+            display: flex; /* Use flexbox para organizar os elementos lado a lado */
+            flex-direction: column; /* Empilhe os elementos verticalmente */
+            align-items: center; /* Alinhe verticalmente ao centro */
+        }
+        
+        /* Estilize o carrinho de compras (use os estilos do seu tema ou personalize conforme necessário) */
+        .shopping_cart_content {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 110px; /* Cantos arredondados */
+            font-size: 16px;
+            margin-top: 10px; /* Adicione espaço entre o formulário de pesquisa e o carrinho */
+            text-align: center; /* Centralize o texto */
+        }
+
+        .busca {
+            display: none; /* Oculta o formulário de busca */
+        }
+    }
+    
+    
+
+
+
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.site-description {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Estilos do conteúdo principal */
+.site-content {
+    min-height: 100vh; /* Defina a altura mínima como 100% da altura da viewport */
+}
+
+
+/* Estilos do rodapé */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos de links no rodapé */
+.site-footer a {
+    color: #fff;
+}
+
+.site-info{
+       
+    color: #fff;
+font-weight: bold;
+font-size: 16px;
+
+font-size: 10px;
+}
+    /* Estilo para o footer */
+    .footer-base {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333; /* Cor de fundo do footer */
+        color:  #fff; /* Cor do texto */
+        padding: 20px; /* Espaçamento interno */
+    }
+
+    /* Estilo para cada uma das divs do footer */
+    .footer-base-div {
+        width: 100%; /* Cada div ocupa 33% da largura da página */
+        color: #fff;
+    }
+
+    .img-rodape{
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+/* Estilos para widgets (barra lateral) */
+.widget {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Outros estilos personalizados podem ser adicionados aqui */
+
+/* Estilos para o Menu */
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px 20px;
+}
+
+.menu-desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-desktop li {
+    margin-right: 20px;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+
+
+/* Estilos para o Ícone do Menu Hambúrguer */
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Estilos para o Menu Hambúrguer (inicialmente oculto) */
+.menu-mobile {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #043ae9;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile li {
+    margin: 10px 0;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Mostra o Menu Hambúrguer em Telas Pequenas */
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+}
+
+
+/* Estilize a área do menu do rodapé */
+.menu-rodape {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+   
+}
+
+/* Estilize a lista de itens de menu */
+.menu-rodape ul {
+    list-style: none; /* Remova os marcadores de lista */
+    padding: 0;
+}
+
+.menu-rodape li {
+    display: inline-block; /* Alinhe os itens horizontalmente */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.menu-rodape a {
+    text-decoration: none; /* Remova sublinhados dos links */
+    color: #fff; /* Cor do texto dos links */
+   
+    transition: color 0.3s; /* Efeito de transição suave na cor do texto */
+}
+
+.menu-rodape a:hover {
+    color: #ff9900; /* Cor do texto ao passar o mouse sobre os links */
+}
+
+.bordacentral{
+    padding: 20px;
+}
+
+

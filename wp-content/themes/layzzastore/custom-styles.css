@@ -1,0 +1,379 @@
+/* Estilos gerais para todo o tema WordPress */
+
+/* Estilos para títulos */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Estilos para links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para telas menores */
+@media screen and (max-width: 768px) {
+    /* Reduza o tamanho dos títulos para telas menores */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Ajuste o espaçamento do botão para telas menores */
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+
+/* Centralizar o título, preço e botão do produto */
+/* Estilos para os produtos WooCommerce */
+
+
+/* Ajustar estilos para telas menores (opcional) */
+@media screen and (max-width: 768px) {
+    ul.products li.product {
+        width: 48%; /* Mostrar 2 por linha em telas menores */
+        margin-right: 2%; /* Espaçamento entre produtos */
+    }
+
+    /* Limpar margens para o último item em cada linha */
+    ul.products li.product:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+
+/* Estilização do botão "Leia mais" em estado de foco/hover */
+ul.products li.product .button:hover,
+ul.products li.product .button:focus {
+    background-color: #0059b3;
+    outline: none; /* Remova a borda de foco padrão para acessibilidade */
+}
+
+/* Estilização do texto dentro do botão "Leia mais" */
+ul.products li.product .button span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos personalizados para WooCommerce */
+
+
+
+/* Estilos para a mensagem de sucesso ao adicionar ao carrinho */
+.woocommerce-message {
+    background-color: #0b520b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Estilos para a tabela do carrinho de compras */
+.woocommerce-cart table.cart {
+    width: 100%;
+}
+
+/* Estilos para o resumo do carrinho */
+.woocommerce .cart-collaterals {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Estilos para o campo de pesquisa do produto */
+.woocommerce-product-search input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para os produtos relacionados */
+.related.products ul.products li.product {
+    margin: 0 10px;
+}
+
+/* Estilos para a página de finalização da compra */
+.woocommerce-checkout form.checkout {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão de finalização da compra */
+.woocommerce-checkout #place_order {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.woocommerce-checkout #place_order:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a página de conta do cliente */
+.woocommerce-MyAccount-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+
+/* Estilo dos campos de entrada de texto */
+.woocommerce form .form-row input[type="text"],
+.woocommerce form .form-row input[type="email"],
+.woocommerce form .form-row input[type="tel"],
+.woocommerce form .form-row input[type="password"],
+.woocommerce form .form-row input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo dos campos de seleção (dropdown) */
+.woocommerce form .form-row select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo dos rótulos (labels) dos campos de entrada */
+.woocommerce form .form-row label {
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada com foco (quando o usuário está digitando) */
+.woocommerce form .form-row input:focus,
+.woocommerce form .form-row select:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Estilo do botão "Finalizar compra" */
+.woocommerce form .form-row .checkout-button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo do botão "Aplicar cupom" */
+.woocommerce-cart .coupon input.button, .woocommerce-cart .cart-collaterals .cart_totals input[name="apply_coupon"] {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo dos campos de observações adicionais */
+.woocommerce-form__field textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do resumo do pedido na página de checkout */
+.woocommerce-checkout-review-order-table {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Estilo dos botões de pagamento na página de checkout */
+.woocommerce-checkout-payment .payment_method label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo do botão de pagamento selecionado */
+.woocommerce-checkout-payment .payment_box.payment_method_paypal {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo do botão "Voltar para o carrinho" */
+.woocommerce-cart .return-to-shop a.button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Estilo ao passar o mouse sobre o botão "Comprar" */
+.single-product .product .single_add_to_cart_button:hover {
+    background-color: #ff4500; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo quando o botão "Comprar" estiver ativo ou pressionado */
+  .single-product .product .single_add_to_cart_button:active {
+    background-color: #ff3300; /* Cor de fundo quando pressionado */
+  }
+  
+  /* Estilo quando o botão "Comprar" estiver desabilitado */
+  .single-product .product .single_add_to_cart_button:disabled {
+    background-color: #ccc; /* Cor de fundo quando desabilitado */
+    cursor: not-allowed;
+  }
+  
+  /* Estilizar o seletor de quantidade com botões "mais" e "menos" na página de produto único */
+  .single-product .quantity {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  }
+  
+  /* Estilizar o campo de entrada de quantidade */
+  .single-product .quantity input[type="number"] {
+      width: 70px; /* Aumente a largura para 70px ou o tamanho desejado */
+      padding: 10px; /* Aumente o preenchimento para aumentar o tamanho do campo */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+      flex: 1; /* Ocupa o espaço restante */
+      font-size: 16px; /* Aumente o tamanho da fonte para 16px ou o tamanho desejado */
+  }
+  
+  /* Estilizar os botões "mais" e "menos" */
+  .single-product .quantity .quantity-down,
+  .single-product .quantity .quantity-up {
+      background-color: #0073e6;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 5px;
+      flex: 0; /* Não ocupa espaço extra */
+  }
+  
+  /* Estilizar os botões "mais" e "menos" em estado de hover */
+  .single-product .quantity .quantity-down:hover,
+  .single-product .quantity .quantity-up:hover {
+      background-color: #0056b3;
+  }
+  
+  
+  
+  
+  
+  /* Estilizar os seletores de atributos na página de produto único */
+  .single-product .variations select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      appearance: none; /* Remove as setas padrão do seletor */
+      -webkit-appearance: none; /* Para navegadores baseados no WebKit (como o Safari) */
+      background: url('sua-seta-customizada.png') no-repeat right center; /* Adicione uma seta personalizada à direita */
+      background-size: 20px; /* Ajuste o tamanho da seta personalizada */
+      cursor: pointer;
+  }
+  
+  /* Estilizar o rótulo (label) dos seletores de atributos */
+  .single-product .variations label {
+      font-weight: bold;
+      text-transform: uppercase; /* Transformar o texto em maiúsculas */
+  }
+  
+  /* Estilizar os botões "Limpar seleção" */
+  .single-product .reset_variations {
+      background-color: #f00; /* Cor de fundo desejada */
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  
+  /* Estilizar o botão "Limpar seleção" em estado de hover */
+  .single-product .reset_variations:hover {
+      background-color: #d00; /* Cor de fundo alterada ao passar o mouse */
+  }
+  
+  
+  /* Estilizar o restante da página */
+  .single-product .product .summary {
+      background-color: #fff; /* Cor de fundo desejada para o restante da página */
+      padding: 20px; /* Espaçamento interno no conteúdo do produto */
+      border-radius: 5px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+  }
+  
+  
+  /* Estilizando o título do produto na lista */
+.titulo-produto {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-transform: capitalize; /* Transforma o texto em maiúsculas iniciais */
+  }
+  
+  
+
